@@ -1,0 +1,4 @@
+<ion-content padding class="layout">
+  <guest (login)="login()" *ngIf="!isAuthenticated"></guest>
+  <authenticated (logout)="logout()" *ngIf="isAuthenticated"></authenticated>
+</ion-content>
